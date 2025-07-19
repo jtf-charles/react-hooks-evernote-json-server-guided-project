@@ -8,11 +8,12 @@
     "react-scripts": "^5.0.1"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "faker": "^5.4.0",
     "json-server": "^0.16.3"
   },
   "scripts": {
-    "start": "PORT=4000 react-scripts start",
+    "start": "cross-env PORT=4000 react-scripts start",
     "server": "json-server ./db/db.json --watch",
     "seed": "node ./db/seed.js"
   },

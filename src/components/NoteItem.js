@@ -1,10 +1,11 @@
 import React from "react";
 
-function NoteItem() {
+function NoteItem({item}) {
+//console.log("bonjour")
   return (
     <li>
-      <h2>Title</h2>
-      <p>Caption...</p>
+      <h2>{item.title}Bonjour</h2>
+      <p>{item.body.slice(0,10)}...</p>
     </li>
   );
 }
