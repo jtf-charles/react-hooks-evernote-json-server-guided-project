@@ -2,6 +2,8 @@ import React from "react";
 import NoteEditor from "./NoteEditor";
 import NoteViewer from "./NoteViewer";
 import Instructions from "./Instructions";
+import ClickNoteContext from "./context/ClickNoteContext";
+import { useContext } from "react";
 
 /*
   Advice: If you cannot figure out how to get this component to work,
@@ -11,10 +13,12 @@ import Instructions from "./Instructions";
           refactor to get this Content component to work.
 */
 function Content() {
+  const { selectedNote } = useContext(ClickNoteContext);
+
   const getContent = () => {
     if (false) {
       return <NoteEditor />;
-    } else if (false) {
+    } else if (selectedNote) {
       return <NoteViewer />;
     } else {
       return <Instructions />;

@@ -1,12 +1,17 @@
 import React from "react";
 import Header from "./Header";
 import NoteContainer from "./NoteContainer";
+import ClickNoteProvider from "./context/ClickNoteProvider";
+
 
 function App() {
   return (
     <div className="app">
       <Header />
-      <NoteContainer />
+      <ClickNoteProvider>
+        <NoteContainer />
+      </ClickNoteProvider>
+
     </div>
   );
 }

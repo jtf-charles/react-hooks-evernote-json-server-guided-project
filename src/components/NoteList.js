@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
 import NoteItem from "./NoteItem";
-import NotesContext from "./NotesContext";
+import NotesContext from "./context/NotesContext";
 
 function NoteList() {
-const {notes, setNotes}=useContext(NotesContext)
+const {searchNotes}=useContext(NotesContext)
 
   return (
     <ul>
       {/* Render list of notes here... */}
-      {notes.map((note)=>{
+      {searchNotes.map((note)=>{
         return <NoteItem key={note.id} item={note}/>
         //console.log(note)
       })}
