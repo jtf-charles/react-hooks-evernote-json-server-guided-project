@@ -8,8 +8,8 @@ const {searchNotes}=useContext(NotesContext)
   return (
     <ul>
       {/* Render list of notes here... */}
-      {searchNotes.map((note)=>{
-        return <NoteItem key={note.id} item={note}/>
+      {searchNotes.map((note,index)=>{
+        return <NoteItem key={index} item={note}/>
         //console.log(note)
       })}
     </ul>

@@ -11,6 +11,9 @@ const { setSelectedNote } = useContext(ClickNoteContext);
       <p>{item.body.slice(0,10)}...</p>
     </li>
   );
+
+  
+
 }
 
 export default NoteItem;
