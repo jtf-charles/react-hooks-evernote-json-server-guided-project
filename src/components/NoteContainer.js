@@ -20,11 +20,11 @@ function NoteContainer() {
   );
 
   useEffect(()=>{
-    fetch("http://localhost:3000/notes")
+    fetch("https:687e89c0efe65e520086f6b6.mockapi.io/notes")
     .then((res)=>res.json())
     .then((data)=>setNotes(data))
   },[])
-  //console.log(notes)
+  console.log(notes)
   return (
     <>
       <Search Search={searchText} onSearchChange={handleSearch} />
