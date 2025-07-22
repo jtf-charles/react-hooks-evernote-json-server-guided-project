@@ -15,7 +15,7 @@ function Footer(){
       <p>© {new Date().getFullYear()} JTF noteSnap</p>
       <p>
         Développé par Joseph Tancrède Fils Charles —
-        <a href="mailto:charlesjosephtancredefils2001@gmail.com"> charlesjosephtancredefils@gmail.com</a>
+        <a href="mailto:charlesjosephtancredefils2001@gmail.com"> charlesjosephtancredefils2001@gmail.com</a>
       </p>
       <div className="footer-icons">
         <a href="https://github.com/jtf-charles" target="_blank" rel="noopener noreferrer">
