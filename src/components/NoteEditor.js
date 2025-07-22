@@ -23,7 +23,7 @@ const editedNote={
   "body":bodyItem
 }
 function editNote() {
-  fetch(`https:687e89c0efe65e520086f6b6.mockapi.io/notes/${selectedNote.id}`, {
+  fetch(`https://687e89c0efe65e520086f6b6.mockapi.io/notes/${selectedNote.id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(editedNote),

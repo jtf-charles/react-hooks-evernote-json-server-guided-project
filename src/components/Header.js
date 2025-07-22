@@ -5,7 +5,7 @@ function Header() {
     <div className="nav-bar">
       <ul>
         <li className="nav-item">
-          <h2>Garbage Collectors' Flatnote</h2>
+          <h2>JTF noteSnap : Your Minimalist Notes Manager</h2>
         </li>
       </ul>
     </div>

@@ -185,3 +185,17 @@ button:hover, .nav-bar:hover, input[type="submit"]:hover {
 button:focus, input[type="submit"]:focus {
   outline: none;
 }
+
+
+
+/*********************/
+
+.app-footer a {
+  color: #ffeb3b;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.app-footer a:hover {
+  color: #ffffff;
+}

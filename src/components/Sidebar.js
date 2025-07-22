@@ -12,7 +12,7 @@ function Sidebar() {
   };
 
   function addDefaultNote() {
-  fetch("https:687e89c0efe65e520086f6b6.mockapi.io/notes", {
+  fetch("https://687e89c0efe65e520086f6b6.mockapi.io/notes", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(DefaultNote),
